@@ -9,3 +9,58 @@
 */
 
 
+@media (min-width: 768px){
+    .site-main ul.products li.product {
+        max-width: 15%
+    }
+}
+
+.wc-block-grid__products .wc-block-grid__product .price, .wc-block-grid__products li.product .price, ul.products .wc-block-grid__product .price, ul.products li.product .price {
+    color: #fffff;
+    font-weight: 400;
+}
+
+.woocommerce-checkout .storefront-primary-navigation,
+.woocommerce-checkout .site-search,
+.woocommerce-checkout .header-widget-region,
+.woocommerce-checkout .footer-widgets{
+    display:none;
+}
+
+.wc-block-grid__product-onsale  {
+    display: none;
+}
+
+.wp-block-button    {
+    display: none;
+}
+
+.wc-block-grid__product {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    float: none;
+    width: auto;
+    position: relative;
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    list-style: none;
+    border-top: 1px solid black;
+}
+
+.cat-links  {
+    display:none;
+}
+
+.wc-block-grid__products .wc-block-grid__product, .wc-block-grid__products li.product, ul.products .wc-block-grid__product, ul.products li.product {
+    list-style: none;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 4.235801032em;
+    text-align: center;
+    position: relative;
+}
