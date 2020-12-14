@@ -1,16 +1,16 @@
 <?php
 
 // // Include Bootstrap
-// function your_script_enqueue() {
-//     wp_enqueue_script( 'bootstrap_js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', array('jquery'), NULL, true );
+function your_script_enqueue() {
+    wp_enqueue_script( 'bootstrap_js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', array('jquery'), NULL, true );
     
-//     wp_enqueue_style( 'bootstrap_css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css', false, NULL, 'all' );
-//     wp_enqueue_style( 'custom_style', get_template_directory_uri() . '/css/your_style.css', array(), '1.0.0', 'all');
+    wp_enqueue_style( 'bootstrap_css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css', false, NULL, 'all' );
+    wp_enqueue_style( 'custom_style', get_template_directory_uri() . '/css/your_style.css', array(), '1.0.0', 'all');
   
-//     wp_enqueue_script( 'custom_js', get_template_directory_uri() . '/js/custom.js' ); 
-//  }
+    wp_enqueue_script( 'custom_js', get_template_directory_uri() . '/js/custom.js' ); 
+ }
  
-//  add_action( 'wp_enqueue_scripts', 'your_script_enqueue' );
+ add_action( 'wp_enqueue_scripts', 'your_script_enqueue' );
 
 
 // Remove reviews tab 
@@ -19,16 +19,13 @@ add_filter( 'woocommerce_product_tabs', 'malinsart_product_tabs', 100);
 function malinsart_product_tabs( $tabs )    {
     unset($tabs['reviews']);
     unset($tabs['description']);
-    unset($tabs['more information']);
+    unset($tabs['additional information']);
     return $tabs;
 }
 
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
 
 add_action( 'woocommerce_after_single_product_summary', 'woocommerce_template_single_meta', 30);
-
-add_action('woocommerce_template_single_rating', 'woocommerce_template_single_meta', 10);
-
 
 
 //Change the number of products per page
