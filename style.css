@@ -51,7 +51,7 @@ ul.products li.product .button {
     margin-bottom: 4.235801032em;
     text-align: center;
     position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
 /* .theme-twentytwenty .wc-block-grid.has-4-columns .wc-block-grid__product, .wc-block-grid.has-4-columns .wc-block-grid__product {
@@ -89,7 +89,7 @@ ul.products li.product .button {
 
 .wc-block-grid__products .wc-block-grid__product .woocommerce-LoopProduct-link, .wc-block-grid__products li.product .woocommerce-LoopProduct-link, ul.products .wc-block-grid__product .woocommerce-LoopProduct-link, ul.products li.product .woocommerce-LoopProduct-link {
     display: block;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
 }
 
 .input-text, input[type="search"] {
@@ -101,7 +101,7 @@ ul.products li.product .button {
     -webkit-appearance: none;
     box-sizing: border-box;
     font-weight: 400;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.125);
+    
 }
 
 .storefront-primary-navigation {
@@ -161,9 +161,76 @@ body, button, input, select, textarea {
     -webkit-appearance: none;
     box-sizing: border-box;
     font-weight: 400;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.125);
+    
 }
 
 .container  {
     display:flex;
+}
+
+.site-header .widget_shopping_cart li, .site-header .widget_shopping_cart p.buttons, .site-header .widget_shopping_cart p.total {
+    background-color:#a46497;
+}
+
+.woocommerce-cart .cart-collaterals .cart_totals tr th {
+    border-top: 1px solid #ebe9eb;
+    background-color:#a46497;
+}
+
+table.cart th {
+    padding: 1.618em;
+    background-color:#a46497;
+}
+
+
+
+table:not(.has-background) tbody tr:nth-child(2n) td, fieldset, fieldset legend {
+    background-color:#a46497;
+}
+
+li {
+   
+    list-style-type: none;
+}
+
+.col-md-3   {
+    margin-top: 40px;
+}
+
+h1{
+    text-align: center;
+    border-bottom: solid black 2px;
+}
+
+.front-page .button{
+    display:none;
+}
+
+table.cart th {
+    border: solid black 1px;
+}
+
+
+.woocommerce-cart .cart-collaterals .cart_totals tr th {
+    border: solid black 1px;
+}
+
+table:not(.has-background) tbody tr:nth-child(2n) td, fieldset, fieldset legend {
+    border: solid black 1px;
+}
+
+table.cart tr:first-child td.product-remove {
+    border-left: solid black 1px;
+}
+
+table.cart td.product-subtotal {
+    border-right: solid black 1px;
+}
+
+.woocommerce-cart .cart-collaterals .cart_totals tr td, .woocommerce-cart .cart-collaterals .cart_totals tr th {
+    border:solid black 1px;
+}
+
+.woocommerce-cart .cart-collaterals .cart_totals tr td, .woocommerce-cart .cart-collaterals .cart_totals tr th {
+    border-top: 1px solid black;
 }
