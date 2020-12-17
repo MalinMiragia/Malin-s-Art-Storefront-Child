@@ -8,7 +8,7 @@ get_header();
 <div class="container">
 
 	<div class="wrapper" id="frontpage-wrapper">
-  <h1>Vad letar du efter idag?</h1>
+  <h1><?php _e( 'Vad letar du efter idag?')?></h1>
 		<div class="row">
 
 			
@@ -38,7 +38,7 @@ get_header();
 
 		</div>
 
-<h1> Nyaste tillagda produkter </h1>
+<h1><?php _e( 'Nyaste tillagda produkter')?> </h1>
 	<div class="row"> 
 
 		
